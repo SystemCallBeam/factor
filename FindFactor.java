@@ -1,4 +1,3 @@
-import java.util.Random;
 import java.util.Scanner;
 
 public class FindFactor {
@@ -12,15 +11,8 @@ public class FindFactor {
     }
 
     public static void prog() {
-        // Random random = new Random();
         float e[] = new float[3];
-        // int n = 5;
-        // for (int i = 0; i < e.length; i++) {
-        // e[i] = (float)(random.nextInt(2 * n + 1) - n);
-        // }
         System.out.print("Enter three numbers : ");
-        // System.out.printf("Enter three numbers : %.2f %.2f %.2f\n", e[0], e[1],
-        // e[2]);
         for (int i = 0; i < e.length; i++) {
             e[i] = sc.nextInt();
         }
@@ -30,7 +22,6 @@ public class FindFactor {
         } else if (e[0] == 0) {
             Method_1(e);
         } else if (e[1] == 0) {
-            // Method_4(e);
             Method_3(e);
         } else if (e[2] == 0) {
             Method_2(e);
